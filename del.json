@@ -1,0 +1,6 @@
+{'input_documents':
+     [Document(page_content='Overview of Course\n•Introduction and Context. What is CS?\n•Java review. Data, control constructs, static methods\n•Classes. Incorporation, instantiation, inheritance\n•Generics. Code reuse\n•Program analysis. Steps the program takes\n•Data structures. Lists, stacks, queue\nComputer Science (Introduction) Preface (Overview)\n ©26 January 2024 2 / 138',
+         metadata={'source': 'my_source'})], 
+         'question': 'Give a brief overview of this course.',
+          'chat_history': 'Human: When Did book, Introduction to Computer Science, was published\nAI: The book "Introduction to Computer Science" was published on January 26, 2024.', 
+          'output_text': 'AI: This course provides an introduction to computer science. It covers topics such as Java programming, including data, control constructs, and static methods. It also explores classes, inheritance, and the use of generics for code reuse. Additionally, the course delves into program analysis and the steps a program takes. Lastly, it introduces various data structures such as lists, stacks, and queues.'}
