@@ -5,6 +5,9 @@
 Created a **Course Instructor** Chatbot for the course **Introduction to Computer Science**.
 Where Students can ask question related to the against the given knowledge to the chatbot
 
+## Demo
+https://github.com/ahmedasad/Langchain-QnA-over-Document/assets/20832655/e1ecf2df-99e6-43bf-82f8-1623fb7a3ce4
+
 
 ## Kick-start 
 
