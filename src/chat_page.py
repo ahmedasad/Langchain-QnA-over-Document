@@ -1,11 +1,11 @@
 import streamlit as st
 import time
-from src.main import Main
+from main import Main
 
 main = Main()
 
 st.title("Instructor Chatbot")
-st.info("This chat bot contains info from the bool 'Introduction to Computer Science' by Ryan Stansifer")
+st.info("This chat bot contains info from the book 'Introduction to Computer Science' by Ryan Stansifer published on 26 January 2024")
 
 
 # Initialize chat history
@@ -36,7 +36,7 @@ if prompt := st.chat_input("Any question"):
                  for msg in st.session_state.messages if msg["role"] == "user"][-1].lower()
 
         # Process Query here and get response
-        assistant_response = main.process_query(query=query)        
+        assistant_response = main.invoke_chain(query=query)        
         
         # # Simulate stream of response with milliseconds delay
         if "\n" in assistant_response:

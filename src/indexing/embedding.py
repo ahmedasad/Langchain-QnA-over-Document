@@ -1,7 +1,7 @@
 from typing import List
 from langchain_openai import OpenAIEmbeddings
 from langchain_core.documents import Document
-from .. import config
+import config
 
 """
     - This class will create embeddings for list of document 

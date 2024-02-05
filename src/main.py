@@ -1,9 +1,9 @@
 
-from src.chain.chain import QAChain
+from indexing.chain import QAChain
 from typing import List
-from src.indexing.database_remote import Database
-from src.indexing.embedding import EmbeddingUtility
-from src.indexing.load_document import LoadDocument
+from indexing.database_remote import Database
+from indexing.embedding import EmbeddingUtility
+from indexing.load_document import LoadDocument
 
 class Main():
     """
@@ -87,8 +87,8 @@ class Main():
         return retrieve_docs
         
     
-    def invoke_chain(self,documents,query):
-        self.chain.invoke_chain(documents,query)
+    def invoke_chain(self,query):
+        return self.chain.invoke_chain(query)
 
     def process_query(self,query: str):
         """
@@ -104,12 +104,3 @@ class Main():
         
 m = Main()
 
-# m.database.chroma_client.delete_collection(m.database.collection_name)
-
-
-# query = "When Did book, Introduction to Computer Science, was published"
-# docs = m.process_query(query)
-# m.invoke_chain(docs,query)
-# query = "who is shahid afridi."
-# docs = m.process_query(query)
-# m.start_chain(docs,query)
