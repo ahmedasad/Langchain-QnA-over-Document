@@ -5,6 +5,15 @@
 Created a **Course Instructor** Chatbot for the course **Introduction to Computer Science**.
 Where Students can ask question related to the against the given knowledge to the chatbot
 
+## Prompt
+"""You are a teacher having conversation with student.\
+            Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer. \
+                otherwise tell the student that you don't have this knowledge in book.
+
+Human: {question}
+{context}
+teacher:
+"""
 ## Demo
 https://github.com/ahmedasad/Langchain-QnA-over-Document/assets/20832655/e1ecf2df-99e6-43bf-82f8-1623fb7a3ce4
 
